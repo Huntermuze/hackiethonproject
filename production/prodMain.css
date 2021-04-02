@@ -1,36 +1,43 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
   
 /* Style the body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-image: linear-gradient(to bottom, #dbedf2, #cadee6, #bad0db, #aac1cf, #9cb3c4);
   }
   
   /* Header/logo Title */
   .header {
-    padding: 10.5rem;
+    background: url('../img/bg_home.svg') center center no-repeat;
+    background-size: cover;  
+  }
+
+  .header-text{
     font-family: 'Arbutus';
     letter-spacing: 0.15em;
-    text-align: center;
-    background: url('../img/prodBackground.jpeg') center center no-repeat;
-    background-size: cover;  
+    text-align: center; 
+    justify-content: center;
     color: white;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 6rem;
   }
   
   /* Increase the font size of the heading */
   .header h1 {
-    font-size: 40px;
+    font-size: 80px;
+  }
+
+  .header p {
+    font-size: 25px;
   }
   
   /* Style the top navigation bar */
   .navbar {
     overflow: hidden;
-    background-color: rgb(65, 65, 65);
-    border-color: black;
-    border-style: solid;
-    border-width: 0.2rem;
+    background-color: #8b7a67;
   
   }
   
@@ -39,10 +46,10 @@ body {
     float: left;
     display: block;
     font-family: 'Michroma';
-    font-size: 1.09rem;
+    font-size: 2rem;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 13px 20px;
     text-decoration: none;
   }
   
@@ -70,7 +77,6 @@ body {
   .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #f1f1f1;
     padding: 20px;
   }
   
@@ -78,7 +84,6 @@ body {
   .main {   
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
-    background-color: white;
     padding: 20px;
   }
   
