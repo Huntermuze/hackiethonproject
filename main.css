@@ -1,0 +1,15 @@
+*{
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+#bg-main{
+    min-height: 100vh;
+    position: fixed;
+    background-size: cover;
+    margin: 0%;
+}
+
+body{
+
+}
+
