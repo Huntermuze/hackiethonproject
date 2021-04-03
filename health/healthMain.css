@@ -118,11 +118,12 @@ body {
 
 .rect-placeholder
 {
-  height: 12rem;
+  min-height: 12rem;
   width: 100%;
   padding: 2rem;
   border-bottom: 0.1rem solid black;
   background-color: royalblue;
+  margin: auto;
 }
 
 .enable-disable:hover
