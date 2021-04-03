@@ -97,7 +97,6 @@ body {
   padding: 1rem;
   margin-bottom: 4rem;
   font-weight: 600;
-  
 }
 
 /* These classes are the card classes and will style the card. */
@@ -126,11 +125,6 @@ body {
   border-bottom: 0.1rem solid black;
   background-color: royalblue;
   margin: auto;
-}
-
-.enable-disable:hover
-{
-  background-color: rgb(65, 225, 65);
 }
 
 .enable-disable
