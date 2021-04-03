@@ -67,6 +67,7 @@ body {
     text-align: center;
     padding: 13px 20px;
     text-decoration: none;
+    transition: .8s;
   }
   
   /* Right-aligned link */
@@ -82,6 +83,7 @@ body {
   /* Change color on hover */
   .navbar a:hover {
     background-color: rgb(189, 189, 189);
+    transition: .8s;
     color: black;
   }
   
