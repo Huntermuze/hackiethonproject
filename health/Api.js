@@ -43,13 +43,15 @@ function getQuote() {
         console.log('Status:', this.status);
         console.log('Headers:', this.getAllResponseHeaders());
         console.log('Body:', this.responseText);
+        var json = JSON.parse(this.responseText)
+        document.getElementById("quote").innerHTML = json.quotes[0].text;
+        document.getElementById("quote-author").innerHTML = json.quotes[0].author;
       }
     };
     
     request.send();
 
-    document.getElementById("quote").innerHTML = randomJoke.joke;
-    document.getElementById("quote-author").innerHTML = randomJoke.joke;
+
     
 
 }
