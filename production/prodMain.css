@@ -244,6 +244,7 @@ body {
   .start:hover{
     background: rgba(0, 0, 0, 1);
     color: white;
+    transition: transform .5s;
   }
 
   .break {
@@ -254,6 +255,7 @@ body {
   {
     background: rgba(0, 299, 136, 1);
     color: black;
+    transition: transform .5s;
   }
 
   .reset {
@@ -263,6 +265,7 @@ body {
   .reset:hover
   {
     background: rgba(0, 0, 0, 1);
+    transition: transform .5s;
   }
   
   .pause {
@@ -272,6 +275,7 @@ body {
   .pause:hover
   {
     background: rgba(0, 0, 0, 1);
+    transition: transform .5s;
   }
 
   .resume {
@@ -281,6 +285,7 @@ body {
   .resume:hover
   {
     background: rgba(162, 70, 255, 1.0);
+    transition: transform .5s;
   }
   
   .clock {
