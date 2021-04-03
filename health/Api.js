@@ -45,7 +45,7 @@ function getQuote() {
         console.log('Body:', this.responseText);
         var json = JSON.parse(this.responseText)
         document.getElementById("quote").innerHTML = json.quotes[0].text;
-        document.getElementById("quote-author").innerHTML = json.quotes[0].author;
+        document.getElementById("quote-author").innerHTML = "Author: " + json.quotes[0].author;
       }
     };
     
