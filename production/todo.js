@@ -1,40 +1,25 @@
-const input = document.querySelector('input');
-const gtn = document.querySelector('.addTask > button');
+let addToDoButton = document.getElementById('addToDo');
+let toDoContainer = document.getElementById('toDoContainer');
+let inputField = document.getElementById('inputField');
 
-Btn.addEventListener('click', addList);
-input.addEventListener('keyup', (e)=>{
-    (e.keyCode === 13 ? addList(e) : null);
+addToDoButton.addEventListener('click', function(){
+    var paragraph = document.createElement('p');
+    paragraph.classList.add('paragraph-styling');
+    paragraph.innerText = inputField.value;
+    toDoContainer.appendChild(paragraph);
+    inputField.value = "";
+
+    paragraph.addEventListener('click', function(){
+        if (paragraph.style.textDecoration == "line-through") {
+            paragraph.style.textDecoration = "";
+        } else if (paragraph.style.textDecoration == "") {
+            paragraph.style.textDecoration = "line-through";
+        } else {
+            console.log(paragraph.style.textDecoration);
+        }
+    })
+
+    paragraph.addEventListener('dblclick', function(){
+        toDoContainer.removeChild(paragraph);
+    })
 })
-
-function addList(e){
-    const incomplete = document.querySelector('.incomplete');
-    const Completed = document.querySelector('.Completed');
-
-    const newLi = document.createElement('li');
-    const checkBtn = document.createElement('button');
-    const delBtn = document.createElement('button');
-
-    checkBtn.innerHTML = '<i class="fa fa-check"></i>';
-    delBtn.innerHTML = '<i class="fa fa-trash"></i>';
-
-
-    if(input.value !==''){
-        newLi.textContent = input.value;
-        input.value = '';
-        notCompleted.appendChild(newLi);
-        newLi.appendChild(checkBtn);
-        newLi.appendChild(delBtn);
-    }
-
-    checkBtn.addEventListener('click', function(){
-        const parent = this.parentNode;
-        parent.remove();
-        Completed.appendChild(parent);
-        checkBtn.style.display = 'none';
-    });
-
-    delBtn.addEventListener('click', function(){
-        const parent = this.parentNode;
-        parent.remove();
-    });
-}
