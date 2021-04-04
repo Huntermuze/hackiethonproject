@@ -2,9 +2,9 @@ var prod = document.getElementById('prod-card');
 var prodBar = document.getElementById('prod-bar');
 var randsong = document.getElementById('randsong');
 var randsongBar = document.getElementById('randsongBar');
+var todolist = document.getElementById('todolist');
+var todolistBar = document.getElementById('todolistBar');
 
-var pl3 = document.getElementById('pl3');
-var pl4 = document.getElementById('pl4');
 var placeholder1 = document.getElementById('pl5');
 var placeholder2 = document.getElementById('pl6');
 var placeholder3 = document.getElementById('pl7');
@@ -23,9 +23,9 @@ randsong.onclick = function () {
         randsong.style.setProperty('opacity', opacityValue);
 };
 
-pl3.onclick = function () {
-        pl4.style.backgroundColor = "rgb(65, 225, 65)";
-        pl3.style.setProperty('opacity', opacityValue);
+todolist.onclick = function () {
+        todolistBar.style.backgroundColor = "rgb(65, 225, 65)";
+        todolist.style.setProperty('opacity', opacityValue);
 };
 
 placeholder1.onclick = function () {

@@ -92,16 +92,20 @@
               </div>
             <div class = "container">
               <h4><b>Description</b></h4>
-              <p>Need new songs to vibe with while working? <br><br>Click the "new song" button below to fetch a song that'll ensure you complete today's work!</p>
+              <p>Need new songs to vibe with while working? <br><br>Click the "new song" button below to fetch a song that'll ensure you complete today's work. You can even click the name/author!</p>
               <button class="randSongButton" onclick="newRandomSong()"><span>NEW SONG</span></button>            
             </div>
         </div>
   
-        <div id = "pl3" class = "feature-cards">
-          <div id = "pl4" class = "enable-disable">Today's TO-DO List</div>
+        <div id = "todolist" class = "feature-cards">
+          <div id = "todolistBar" class = "enable-disable">Today's TO-DO List</div>
           <div class = "rect-placeholder">
-            <div class="toDoListcontainer">
-              <input id="inputField" type="text"><button id="addToDo">+</button>
+            <div class = "todoListInputAdd">
+              <input id="inputField" type="text" placeholder = "Enter a task">
+              <button id="addToDoBtn">+</button>
+            </div>
+            <div class="toDoListContainer">
+              <h4 id = "taskBoardTitle">Tasks Board </h4>
               <div class="to-dos" id="toDoContainer">
               </div>
           </div>

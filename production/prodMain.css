@@ -324,37 +324,6 @@ body {
     width: 80%;
     margin: 0 auto;
   }
-  
-  .toDoListContainer {
-    display: flex;
-}
-
-#inputField {
-    max-width: 75%;
-    height: 40PX;
-    border-width: 3px;
-    border: 1px solid black;
-    outline: none;
-    font-size: 25px;
-    padding: 0;
-}
-
-#addToDo {
-    height: 35px;
-    width: 35px;
-    border: 1px solid black;
-    font-size: 20px;
-}
-
-.paragraph-styling {
-    margin: 0;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.to-dos {
-  text-decoration: none;
-}
 
   @keyframes pulse {
     0%,
@@ -419,4 +388,80 @@ a:link {
 .randSongButton:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/*Below is the todo-list styling*/
+.todoListInputAdd
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.toDoListContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.7);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 15%;
+  text-align: center;
+  border: 0.1rem solid black;
+}
+
+#taskBoardTitle
+{
+  text-decoration: underline;
+  margin: 0;
+}
+
+.to-dos {
+  text-align: left;
+  }
+
+#inputField {
+  width: 75%;
+  height: 30%;
+  border: 0.3vh solid black;
+  outline: none;
+  padding: 0;
+  color: white;
+  font-family: "Lato";
+}
+
+#addToDoBtn {
+  width: 20%;
+  height: 35%;
+  border: 0.3vh solid black;
+  background: rgba(51, 51, 51, 0.775);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Lato";
+  transition: .3s;
+}
+
+#addToDoBtn:hover
+{
+  background: rgba(0, 0, 0, 1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+/* These change the colours of the placeholders on all types of browswers*/
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox, Chrome, Safari etc*/
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
 }
