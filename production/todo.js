@@ -20,7 +20,7 @@ addToDoButton.addEventListener('click', function(){
 
     paragraph.addEventListener('click', function(){
         if (paragraph.style.textDecoration == "line-through") {
-            paragraph.style.textDecoration = "none";
+            paragraph.style.textDecoration = "";
             paragraph.style.color = "white";
         } else if (paragraph.style.textDecoration == "") {
             paragraph.style.textDecoration = "line-through";
