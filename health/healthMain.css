@@ -382,8 +382,14 @@ h1, p {
 
 /* Below is for weather API */
 #user-city {
-  padding: 0.5rem;
-  margin: 3% 10% 2% 0%;
+ /* padding: 0.5rem;
+  margin: 3% 10% 2% 0%;  */
+  transition: 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: none;
 }
 
 #map {
