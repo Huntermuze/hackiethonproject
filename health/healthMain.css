@@ -112,6 +112,36 @@ body {
   justify-content: space-between;
 }
 
+/* These are the classes for description texts */
+#wellbeingGirlWeights {
+  padding-left: 30px;
+}
+
+.you-sound-tired {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.use-health-mode {
+  background-color: rgba(70,103,141,0.6);
+  color: white;
+  padding: 1vh;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.tips-for-health-mode {
+  border: black solid 1px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 /* These classes are the card classes and will style the card. */
 .feature-cards
 {
