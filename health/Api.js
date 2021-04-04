@@ -75,10 +75,10 @@ function getWeather() {
         if(xhr.readyState == 4 && xhr.status < 300)
         {   //Retrieve's info from API
             var weather = JSON.parse(xhr.responseText);
-            document.getElementById("w-name").innerHTML = "Location: " + weather["location"]["name"];
-            document.getElementById("w-temp").innerHTML = "Temperature: " + weather["current"]["temp_c"] + "&#8451;";
-            document.getElementById("w-rain").innerHTML = "Chance of Rain: " + weather["forecast"]["forecastday"][0]["day"]["daily_chance_of_rain"] + "%";
-            document.getElementById("w-snow").innerHTML = "Chance of Snow" + weather["forecast"]["forecastday"][0]["day"]["daily_chance_of_snow"] + "%";
+            document.getElementById('w-name').innerHTML = "LOCATION - " + weather["location"]["name"];
+            document.getElementById('statsOfWeather').innerHTML = "<br>Temperature: " + weather["current"]["temp_c"] + "&#8451;" + 
+            "<br>Chance of Rain: " + weather["forecast"]["forecastday"][0]["day"]["daily_chance_of_rain"] + "%" +
+            "<br>Chance of Snow: " + weather["forecast"]["forecastday"][0]["day"]["daily_chance_of_snow"] + "%";
 
             longitude = weather["location"]["lon"];
             latitude = weather["location"]["lat"];
@@ -88,10 +88,10 @@ function getWeather() {
 
             // To determine if person should go out or not
             if(rain<=60 && snow<=60 && 10<=temperature<=40) {
-                document.getElementById("outcome").innerHTML = "It's a fine weather to go outside for a walk!"
+                document.getElementById('outcome').innerHTML = "It's good weather to head out for the day/night!"
             }
             else {
-                document.getElementById("outcome").innerHTML = "Tough luck, best to stay home and stay snug!"
+                document.getElementById('outcome').innerHTML = "Tough luck, best to stay home and stay snug!"
             }
 
             
