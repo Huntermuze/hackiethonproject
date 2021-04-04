@@ -104,6 +104,9 @@ function initMap() {
     });
 };
 
+//documentation
+//https://developers.google.com/maps/documentation/javascript/overview#Inline
+
 // function getWeather() {
 //     var inputValue = document.querySelector('#user-city');
 //  //   var longitude;
