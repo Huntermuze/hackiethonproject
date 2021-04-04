@@ -4,11 +4,11 @@ var quote = document.getElementById('quote-card');
 var quoteBar = document.getElementById('quote-bar');
 var weather = document.getElementById('weather-card');
 var weatherBar = document.getElementById('weather-bar');
-
 var screentime = document.getElementById('screentime');
 var screentimeBar = document.getElementById('screentimeBar');
-var placeholder3 = document.getElementById('pl3');
-var placeholder4 = document.getElementById('pl4');
+var darkmode = document.getElementById('darkmode');
+var darkmodeBar = document.getElementById('darkmodeBar');
+
 var placeholder5 = document.getElementById('pl5');
 var placeholder6 = document.getElementById('pl6');
 const opacityValue = 1.0;
@@ -33,9 +33,9 @@ screentime.onclick = function () {
         screentime.style.setProperty('opacity', opacityValue);
 };
 
-placeholder3.onclick = function () {
-        placeholder4.style.backgroundColor = "rgb(56,214,171,0.6)";
-        placeholder3.style.setProperty('opacity', opacityValue);
+darkmode.onclick = function () {
+        darkmodeBar.style.backgroundColor = "rgb(56,214,171,0.6)";
+        darkmode.style.setProperty('opacity', opacityValue);
 };
 
 placeholder5.onclick = function () {

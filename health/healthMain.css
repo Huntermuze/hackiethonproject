@@ -288,3 +288,83 @@ body {
 #pauseButton {
   display: none;
 }
+
+/*Below is the code for the dark mode feature*/
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+}
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1, p {
+  color: var(--text-color);
+}
+
+/*Darkmode buttons (same as others - for consistency)*/
+.toggledarkmode {
+  font-family: 'Hammersmith One', sans-serif;
+  border-radius: 4px;
+  background-color: royalblue;
+  border: none;
+  color: RGB(255, 255, 255);
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.toggledarkmode span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.toggledarkmode span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.toggledarkmode:hover span {
+  padding-right: 25px;
+}
+
+.toggledarkmode:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#darkmodeImg
+{
+  width: 100%;  
+  height: 100%;
+}
+
+#darkmodePlaceholder
+{
+  padding: 0;
+  margin: 0;
+}
