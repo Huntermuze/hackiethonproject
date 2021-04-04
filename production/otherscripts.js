@@ -55,7 +55,8 @@ todolistBar.onclick = function () {
         }
 };
 
-placeholder2.onclick = function () {
+//Not needed because these are templates to show off the COMING SOON stuff.
+/*placeholder2.onclick = function () {
         let currColor = window.getComputedStyle(placeholder2, null).getPropertyValue('background-color');
         if (currColor == 'rgba(82, 66, 43, 0.6)')
         {
@@ -95,7 +96,7 @@ placeholder6.onclick = function () {
                 placeholder6.style.backgroundColor = "rgba(82, 66, 43, 0.6)";
                 placeholder5.style.setProperty('opacity', 0.6);
         }
-};
+};*/
 
 
 
