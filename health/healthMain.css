@@ -369,3 +369,14 @@ h1, p {
   padding: 0;
   margin: 0;
 }
+
+/* Below is for weather API */
+#user-city {
+  padding: 0.5rem;
+  margin: 3% 10% 2% 0%;
+}
+
+#map {
+  height: inherit;
+  width: inherit;
+}
