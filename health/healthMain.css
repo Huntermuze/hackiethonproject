@@ -96,12 +96,6 @@ body {
   color: black;
 }
 
-/* Main column */
-.main {   
-  margin: 1.5rem;
-  font-family: 'Lato';
-}
-
 /* Fake image, just for this example */
 .desc-placeholder {
   background-color: rgb(70,103,141,0.4);
@@ -304,16 +298,24 @@ body.dark-theme {
   /* defaults to dark theme */
   body {
     --text-color:#222;
-    --bkg-color: rgb(162, 189, 214,0.3);
+    --bkg-color: rgba(17, 17, 17, 0.3);
   }
   body.light-theme {
     --text-color: #222;
     --bkg-color: rgb(30,38,58,0.9);
+    --body-text-color: white;
   }
 }
 
 body {
   background: var(--bkg-color);
+}
+
+/* Main column */
+.main {   
+  margin: 1.5rem;
+  font-family: 'Lato';
+  color: var(--body-text-color);
 }
 
 h1, p {
