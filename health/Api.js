@@ -87,7 +87,7 @@ function getWeather() {
             temperature = weather["current"]["temp_c"];
 
             // To determine if person should go out or not
-            if(rain<=60 && snow<=60 && 10<=temperature<=40) {
+            if(rain <= 60 && snow <= 60 && temperature >= 10 && temperature <=40) {
                 document.getElementById('outcome').innerHTML = "It's good weather to head out for the day/night!"
             }
             else {

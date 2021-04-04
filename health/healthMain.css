@@ -237,7 +237,7 @@ body {
   text-align: center;
   font-size: 150%;
   padding: 5px;
-  width: 200px;
+  width: 100%;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -365,6 +365,10 @@ body {
   color: var(--text-color);
 }
 
+.you-sound-tired
+{
+  color: var(--text-color);
+}
 
 /*Darkmode buttons (same as others - for consistency)*/
 .toggledarkmode {
@@ -376,7 +380,7 @@ body {
   text-align: center;
   font-size: 150%;
   padding: 5px;
-  width: 90%;
+  width: 100%;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -426,12 +430,17 @@ body {
   padding: 5px;
   background: rgba(0, 0, 0, 0.11);
   border: none;
+  width: 100%;
 }
 
 #map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 15rem;
-  width: 15.8rem;
+  width: 100%;
   z-index: 3;
+  border-radius: 10px;
 }
 
 #mapPlaceholder
@@ -440,6 +449,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  
 }
 
 .mapText
@@ -448,12 +458,12 @@ body {
   font-family: 'Lato';
   font-size: 1.4rem;
   font-weight: 600;
-  background-color: grey;
+  background-color: rgb(169,154,150,1.0);;
   color: black;
   height: 100%;
   width: 100%;
   margin-top: 1rem;
-
+  border-radius: 10px;
 }
 
 #w-name
