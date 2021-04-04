@@ -41,7 +41,7 @@
           <div class = "container">
             <h4><b>Description</b></h4>
             <p>Click the button for a joke!</p>
-            <button onclick="getJoke()">Click Me!</button>
+            <button class = "descButtons" onclick="getJoke()"><span>CLICK ME</span></button>
           </div>
       </div>
 
@@ -53,18 +53,20 @@
           <div class = "container">
             <h4 id="quote-author"><b>Description</b></h4>
             <p>Click the button for a quote!</p>
-            <button onclick="getQuote()">Click Me!</button>
+            <button class = "descButtons" onclick="getQuote()"><span>CLICK ME</span></button>
           </div>
       </div>
 
       <div id = "weather-card" class = "feature-cards">
         <div id = "weather-bar" class = "enable-disable">Should you go out?</div>
-        <div class = "rect-placeholder"></div>
+        <div class = "rect-placeholder">
+          <input type="text" class="inputValue" placeholder="Enter a City">
+        </div>
           <div class = "container">
             <h4><b>Description</b></h4>
+            <p>Click the button for a quote!</p>
             <div class="input">
-              <input type="text" class="inputValue" placeholder="Enter a City">
-              <input type="submit" value="Submit" class="button">
+              <input type="submit" value="SUBMIT" class = "descButtons" id = "weather-submit-btn">
               <p class="name"></p>
               <p class="temp"></p>
               <p class="desc"></p>

@@ -65,7 +65,7 @@
               <input type="number" value="1" id="focusTime" />
               <label for="breakTime">Break Time</label>
               <input type="number" value="1" id="breakTime" />
-              <button type="submit">Save settings</button>
+              <button class = "prodSettingSave" type="submit">Save Settings</button>
             </form>
           </div>
             <div class = "container">
@@ -74,21 +74,31 @@
                 Then select "start focus" to begin your period of solid productivity. You can pause this period inbetween to account for any
                 unexpected interruptions, or you can reset if need be.
               </p>
-              <br>Click the "start break" to reap the benefits of your hard earned break!
+              <br>Click the "start break" to reap the benefits of your well-deserved break!
             </div>
         </div>
 
-        <div id = "pl1" class = "feature-cards">
-          <div id = "pl2" class = "enable-disable">Tips for Efficiency</div>
-          <div class = "rect-placeholder"></div>
+        <div id = "randsong" class = "feature-cards">
+          <div id = "randsongBar" class = "enable-disable">Music Station</div>
+          <div class = "rect-placeholder">
+              <div class="col-xs-6 text-right" id="songImage"></div>
+              <div class="col-xs-6 text-left">
+                <div class = "randSongPara">
+                  <p id="song"></p>
+                  <p id="artist"></p>
+                  <p id="releaseDate"></p>
+                </div>  
+              </div>
+              </div>
             <div class = "container">
               <h4><b>Description</b></h4>
-              <p>This section will describe briefly how this feature works and what it does!</p>
+              <p>Need new songs to vibe with while working? <br><br>Click the "new song" button below to fetch a song that'll ensure you complete today's work!</p>
+              <button class="randSongButton" onclick="newRandomSong()"><span>NEW SONG</span></button>            
             </div>
         </div>
   
         <div id = "pl3" class = "feature-cards">
-          <div id = "pl4" class = "enable-disable">ToDo List</div>
+          <div id = "pl4" class = "enable-disable">Today's TO-DO List</div>
           <div class = "rect-placeholder">
             <div class="toDoListcontainer">
               <input id="inputField" type="text"><button id="addToDo">+</button>
@@ -138,5 +148,6 @@
       <script src="progress.js"></script>
       <script src="otherscripts.js"></script>
       <script src="todo.js"></script>
+      <script src="randomSong.js"></script>
 </body>
 </html>

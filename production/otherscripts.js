@@ -1,8 +1,8 @@
 var prod = document.getElementById('prod-card');
 var prodBar = document.getElementById('prod-bar');
+var randsong = document.getElementById('randsong');
+var randsongBar = document.getElementById('randsongBar');
 
-var pl1 = document.getElementById('pl1');
-var pl2 = document.getElementById('pl2');
 var pl3 = document.getElementById('pl3');
 var pl4 = document.getElementById('pl4');
 var placeholder1 = document.getElementById('pl5');
@@ -18,9 +18,9 @@ prod.onclick = function () {
         prod.style.setProperty('opacity', opacityValue);
 };
 
-pl1.onclick = function () {
-        pl2.style.backgroundColor = "rgb(65, 225, 65)";
-        pl1.style.setProperty('opacity', opacityValue);
+randsong.onclick = function () {
+        randsongBar.style.backgroundColor = "rgb(65, 225, 65)";
+        randsong.style.setProperty('opacity', opacityValue);
 };
 
 pl3.onclick = function () {

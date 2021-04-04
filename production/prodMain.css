@@ -1,4 +1,4 @@
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
 
 * {
@@ -108,7 +108,8 @@ body {
   {
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0,0,0, 1);
     transition: 0.3s;
-    width: 20%;
+    width: 20vw;
+    min-width: 20rem;
     background-color: rgba(221, 221, 221, 1);
     border-radius: 0.6rem;
     margin: 1.5rem;
@@ -196,14 +197,14 @@ body {
     align-items: center;
     margin-top: 3rem;
   }
-  button {
+  .btn-group button {
     margin: 0.3rem;
     padding: 0.5rem;
     border: none;
     font-size: 18px;
     transition: 0.5s ease-in-out;
   }
-  button:hover
+  .btn-group button:hover
   {
     transition: transform .5s;
     -ms-transform: scale(1);
@@ -222,13 +223,16 @@ body {
     max-width: 370px;
     margin: 5px auto;
   }
-  form button {
+  .prodSettingSave {
     background: rgba(51, 51, 51, 0.8);
     width: 100%;
     margin: 5px 0;
     color: white;
+    padding: 0.5rem;
+    font-size: 18px;
+    border: none;
   }
-  form button:hover
+  .prodSettingSave:hover
   {
     background: rgba(0, 0, 0, 1);
     transition: transform .5s;
@@ -364,3 +368,55 @@ body {
       transform: rotate(-90deg) scale(0.8);
     }
   }
+
+
+/* Below is the styling for the RANDOM SONG Feature*/
+#randsong {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.randSongPara{
+  font-size: 110%;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.randSongButton {
+  font-family: 'Hammersmith One', sans-serif;
+  border-radius: 4px;
+  background-color: royalblue;
+  border: none;
+  color: RGB(255, 255, 255);
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.randSongButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.randSongButton span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.randSongButton:hover span {
+  padding-right: 25px;
+}
+
+.randSongButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
