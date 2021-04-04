@@ -130,12 +130,6 @@ body {
     background-color: royalblue;
     margin: auto;
   }
-
-  .enable-disable:hover
-  {
-    background-color: rgb(65, 225, 65);
-  }
-  
   .enable-disable
   {
     background-color: rgb(225, 65, 65);
