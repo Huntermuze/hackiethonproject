@@ -61,9 +61,10 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: 'Lato';
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
   color: white;
   padding: 13px 20px;
   text-decoration: none;
@@ -155,7 +156,8 @@ body {
   height: 20%;
   width: 100%;
   font-family: 'Lato';
-  font-weight: 450;
+  font-weight: 550;
+  font-size: 1.1rem;
 }
 
 .card-container
@@ -278,10 +280,16 @@ body {
 
 #playButton {
   display: block;
+  filter: brightness(0) saturate(100%);
 }
 
 #pauseButton {
   display: none;
+  filter: brightness(0) saturate(100%);
+}
+
+#resetButton {
+  filter: brightness(0) saturate(100%);
 }
 
 /*Below is the code for the dark mode feature*/

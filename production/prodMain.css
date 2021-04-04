@@ -58,9 +58,11 @@ body {
   .navbar a {
     float: left;
     display: flex; /*changed from block because the arrow and text didn't align*/
-    font-family: 'Lato';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    text-transform: uppercase;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     text-align: center;
     align-items: center;
@@ -318,12 +320,12 @@ body {
   }
 
   .resume {
-    background: rgba(131, 10, 252, 0.9);
+    background: rgb(50,136,213,0.4);
     color: white;
   }
   .resume:hover
   {
-    background: rgba(162, 70, 255, 1.0);
+    background: rgb(50,136,213,0.8);
     transition: transform .5s;
   }
   
@@ -389,7 +391,7 @@ a:link {
 }
 
 .randSongButton {
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: 'Lato', sans-serif;
   border-radius: 4px;
   background-color: royalblue;
   border: none;
