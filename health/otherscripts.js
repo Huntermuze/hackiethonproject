@@ -5,8 +5,8 @@ var quoteBar = document.getElementById('quote-bar');
 var weather = document.getElementById('weather-card');
 var weatherBar = document.getElementById('weather-bar');
 
-var placeholder1 = document.getElementById('pl1');
-var placeholder2 = document.getElementById('pl2');
+var screentime = document.getElementById('screentime');
+var screentimeBar = document.getElementById('screentimeBar');
 var placeholder3 = document.getElementById('pl3');
 var placeholder4 = document.getElementById('pl4');
 var placeholder5 = document.getElementById('pl5');
@@ -28,9 +28,9 @@ weather.onclick = function () {
         weather.style.setProperty('opacity', opacityValue);
 };
 
-placeholder1.onclick = function () {
-        placeholder2.style.backgroundColor = "rgb(65, 225, 65)";
-        placeholder1.style.setProperty('opacity', opacityValue);
+screentime.onclick = function () {
+        screentimeBar.style.backgroundColor = "rgb(65, 225, 65)";
+        screentime.style.setProperty('opacity', opacityValue);
 };
 
 placeholder3.onclick = function () {

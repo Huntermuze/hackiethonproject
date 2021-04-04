@@ -74,12 +74,27 @@
           </div>
       </div>
 
-      <div id = "pl1" class = "feature-cards">
-        <div id = "pl2" class = "enable-disable">Feature #4</div>
-        <div class = "rect-placeholder"></div>
+      <div id = "screentime" class = "feature-cards" class = "screentime">
+        <div id = "screentimeBar" class = "enable-disable">Screen Time</div>
+        <div class = "rect-placeholder" id = "screentimePl">
+          <div class="circle">
+            <span class="time" id="display">00:00:00</span>
+          </div>
+          <div class="controls">
+            <button class="buttonPlay">
+              <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+    
+              <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+            </button>
+    
+            <button class="buttonReset">
+              <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+            </button>
+          </div>
+        </div>
           <div class = "container">
             <h4><b>Description</b></h4>
-            <p>This section will describe briefly how this feature works and what it does!</p>
+            <p>Utilise this stopwatch to monitor your total screentime.<br><br>Maybe its time to rest your eyes and go for a walk?</p>
           </div>
       </div>
 
@@ -102,7 +117,8 @@
       </div>
     </div>
 
-    <script src="./Api.js"></script>  
-    <script src="otherscripts.js"></script>      
+    <script src="Api.js"></script>  
+    <script src="otherscripts.js"></script>
+    <script src ="screentime.js"></script>   
   </body>
 </html>
