@@ -119,6 +119,37 @@ body {
     
   }
 
+  /* These are the classes for description texts */
+  .you-procrastinate {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.719);
+  }
+
+  .you-havent-worked {
+    text-align: center;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+  }
+
+  .use-prod-mode {
+    background-color: rgba(121,105,86);
+    color: white;
+    padding: 1vh;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .tips-for-prod-mode {
+    border: black solid 1px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   /* These classes are the card classes and will style the card. */
   .feature-cards
   {
