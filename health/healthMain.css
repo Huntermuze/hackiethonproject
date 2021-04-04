@@ -515,3 +515,14 @@ body {
   width: 20%;
   margin-right: 2rem;
 }
+
+#workoutGenerator
+{
+  width: 100%;
+  height: 12rem;
+}
+
+#workoutGenRect
+{
+  padding: 0;
+}

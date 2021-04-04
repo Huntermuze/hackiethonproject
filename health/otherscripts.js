@@ -9,8 +9,8 @@ var screentimeBar = document.getElementById('screentimeBar');
 var darkmode = document.getElementById('darkmode');
 var darkmodeBar = document.getElementById('darkmodeBar');
 
-var placeholder5 = document.getElementById('pl5');
-var placeholder6 = document.getElementById('pl6');
+var workoutGen = document.getElementById('workoutGen');
+var workoutGenBar = document.getElementById('workoutGenBar');
 const opacityValue = 1.0;
 
 jokeBar.onclick = function () {
@@ -83,20 +83,20 @@ darkmodeBar.onclick = function () {
         }
 };
 
-/*
-placeholder6.onclick = function () {
-        let currColor = window.getComputedStyle(placeholder6, null).getPropertyValue('background-color');
+
+workoutGenBar.onclick = function () {
+        let currColor = window.getComputedStyle(workoutGenBar, null).getPropertyValue('background-color');
         if (currColor == 'rgba(74, 145, 226, 0.7)')
         {
-                placeholder6.style.backgroundColor = "rgb(56, 214, 171)";
-                placeholder5.style.setProperty('opacity', opacityValue);
+                workoutGenBar.style.backgroundColor = "rgb(56, 214, 171)";
+                workoutGen.style.setProperty('opacity', opacityValue);
         }
         else
         {
-                placeholder6.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
-                placeholder5.style.setProperty('opacity', 0.5);
+                workoutGenBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
+                workoutGen.style.setProperty('opacity', 0.5);
         }
-};*/
+};
 
 
 
