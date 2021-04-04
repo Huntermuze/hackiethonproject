@@ -377,6 +377,6 @@ h1, p {
 }
 
 #map {
-  height: inherit;
-  width: inherit;
+  height: 300px;
+  width: 300px;
 }

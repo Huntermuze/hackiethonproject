@@ -74,6 +74,14 @@ function getWeather() {
             document.getElementById("w-temp").innerHTML = weather["current"]["temp_c"] + "&#8451;";
             document.getElementById("w-rain").innerHTML = weather["forecast"]["forecastday"][0]["day"]["daily_chance_of_rain"] + "%";
             document.getElementById("w-snow").innerHTML = weather["forecast"]["forecastday"][0]["day"]["daily_chance_of_snow"] + "%";
+
+            var longitude = weather["location"]["lon"];
+            var latitude = weather["location"]["lat"];
+
+            var script = document.createElement('script');
+            script.src = 'http://maps.googleapis.com/maps/api/js?key='+ mapsKey +'&callback=initMap';
+            script.async = true;
+            document.head.appendChild(script);
             
         }
         else if(xhr.readyState == 4)
@@ -85,7 +93,16 @@ function getWeather() {
     xhr.send();
 };
 
-
+function initMap() {
+                
+    map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 11,
+        center: {
+            lat: latitude,
+            lng: longitude
+        }
+    });
+};
 
 // function getWeather() {
 //     var inputValue = document.querySelector('#user-city');
