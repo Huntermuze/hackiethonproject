@@ -23,7 +23,7 @@ jokeBar.onclick = function () {
         else
         {
                 jokeBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
-                joke.style.setProperty('opacity', 0.7);
+                joke.style.setProperty('opacity', 0.5);
         }
 };
 
@@ -37,7 +37,7 @@ quoteBar.onclick = function () {
         else
         {
                 quoteBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
-                quote.style.setProperty('opacity', 0.7);
+                quote.style.setProperty('opacity', 0.5);
         }
 };
 
@@ -51,7 +51,7 @@ weatherBar.onclick = function () {
         else
         {
                 weatherBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
-                weather.style.setProperty('opacity', 0.7);
+                weather.style.setProperty('opacity', 0.5);
         }
 };
 
@@ -65,7 +65,7 @@ screentimeBar.onclick = function () {
         else
         {
                 screentimeBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
-                screentime.style.setProperty('opacity', 0.7);
+                screentime.style.setProperty('opacity', 0.5);
         }
 };
 
@@ -79,7 +79,7 @@ darkmodeBar.onclick = function () {
         else
         {
                 darkmodeBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
-                darkmode.style.setProperty('opacity', 0.7);
+                darkmode.style.setProperty('opacity', 0.5);
         }
 };
 
@@ -93,7 +93,7 @@ placeholder6.onclick = function () {
         else
         {
                 placeholder6.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
-                placeholder5.style.setProperty('opacity', 0.7);
+                placeholder5.style.setProperty('opacity', 0.5);
         }
 };
 
