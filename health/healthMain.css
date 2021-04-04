@@ -387,8 +387,9 @@ h1, p {
 }
 
 #map {
-  height: 300px;
-  width: 300px;
+  height: 15rem;
+  width: 15.8rem;
+  z-index: 3;
 }
 
 /*Below is the code for a custom scrollbar.
