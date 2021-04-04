@@ -295,23 +295,22 @@ body {
 /*Below is the code for the dark mode feature*/
 body {
   --text-color: #222;
-  --bkg-color: rgb(162, 189, 214,0.3);
+  --bkg-color: rgba(162, 189, 214, 0.3);
 }
 body.dark-theme {
-  --text-color: black;
-  --bkg-color: rgb(30,38,58,0.9);
+  --text-color: #eee;
+  --bkg-color: rgba(30, 38, 58, 0.9);
 }
 
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body {
-    --text-color:#222;
-    --bkg-color: rgba(17, 17, 17, 0.3);
+    --text-color: #eee;
+    --bkg-color: rgba(30, 38, 58, 0.9);
   }
   body.light-theme {
     --text-color: #222;
-    --bkg-color: rgb(30,38,58,0.9);
-    --body-text-color: white;
+    --bkg-color: rgba(162, 189, 214, 0.3);
   }
 }
 
@@ -323,12 +322,9 @@ body {
 .main {   
   margin: 1.5rem;
   font-family: 'Lato';
-  color: var(--body-text-color);
-}
-
-h1, p {
   color: var(--text-color);
 }
+
 
 /*Darkmode buttons (same as others - for consistency)*/
 .toggledarkmode {
@@ -340,7 +336,7 @@ h1, p {
   text-align: center;
   font-size: 150%;
   padding: 5px;
-  width: 80%;
+  width: 90%;
   transition: all 0.5s;
   cursor: pointer;
 }
