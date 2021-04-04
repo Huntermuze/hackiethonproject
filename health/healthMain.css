@@ -142,16 +142,17 @@ body {
 .enable-disable
 {
   background-color: rgba(74, 145, 226, 0.7) ;
-  height: 2.2rem;
+  height: 2.8rem;
   width: 100%;
+  border-bottom: 0.1rem solid black;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
   text-align: center;
-  padding: 0.1rem;
+  padding-top: 0.4rem;
   font-family: 'Lato';
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .container

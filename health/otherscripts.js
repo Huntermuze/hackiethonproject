@@ -15,85 +15,85 @@ const opacityValue = 1.0;
 
 jokeBar.onclick = function () {
         let currColor = window.getComputedStyle(jokeBar, null).getPropertyValue('background-color');
-        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        if (currColor == 'rgba(74, 145, 226, 0.7)')
         {
-                jokeBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                jokeBar.style.backgroundColor = "rgb(56,214,171)";
                 joke.style.setProperty('opacity', opacityValue);
         }
         else
         {
-                jokeBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
-                joke.style.setProperty('opacity', 0.6);
+                jokeBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
+                joke.style.setProperty('opacity', 0.7);
         }
 };
 
 quoteBar.onclick = function () {
         let currColor = window.getComputedStyle(quoteBar, null).getPropertyValue('background-color');
-        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        if (currColor == 'rgba(74, 145, 226, 0.7)')
         {
-                quoteBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                quoteBar.style.backgroundColor = "rgb(56, 214, 171)";
                 quote.style.setProperty('opacity', opacityValue);
         }
         else
         {
-                quoteBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
-                quote.style.setProperty('opacity', 0.6);
+                quoteBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
+                quote.style.setProperty('opacity', 0.7);
         }
 };
 
 weatherBar.onclick = function () {
         let currColor = window.getComputedStyle(weatherBar, null).getPropertyValue('background-color');
-        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        if (currColor == 'rgba(74, 145, 226, 0.7)')
         {
-                weatherBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                weatherBar.style.backgroundColor = "rgb(56, 214, 171)";
                 weather.style.setProperty('opacity', opacityValue);
         }
         else
         {
-                weatherBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
-                weather.style.setProperty('opacity', 0.6);
+                weatherBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
+                weather.style.setProperty('opacity', 0.7);
         }
 };
 
 screentimeBar.onclick = function () {
         let currColor = window.getComputedStyle(screentimeBar, null).getPropertyValue('background-color');
-        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        if (currColor == 'rgba(74, 145, 226, 0.7)')
         {
-                screentimeBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                screentimeBar.style.backgroundColor = "rgb(56, 214, 171)";
                 screentime.style.setProperty('opacity', opacityValue);
         }
         else
         {
-                screentimeBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
-                screentime.style.setProperty('opacity', 0.6);
+                screentimeBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
+                screentime.style.setProperty('opacity', 0.7);
         }
 };
 
 darkmodeBar.onclick = function () {
         let currColor = window.getComputedStyle(darkmodeBar, null).getPropertyValue('background-color');
-        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        if (currColor == 'rgba(74, 145, 226, 0.7)')
         {
-                darkmodeBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                darkmodeBar.style.backgroundColor = "rgb(56, 214, 171)";
                 darkmode.style.setProperty('opacity', opacityValue);
         }
         else
         {
-                darkmodeBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
-                darkmode.style.setProperty('opacity', 0.6);
+                darkmodeBar.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
+                darkmode.style.setProperty('opacity', 0.7);
         }
 };
 
 placeholder6.onclick = function () {
         let currColor = window.getComputedStyle(placeholder6, null).getPropertyValue('background-color');
-        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        if (currColor == 'rgba(74, 145, 226, 0.7)')
         {
-                placeholder6.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                placeholder6.style.backgroundColor = "rgb(56, 214, 171)";
                 placeholder5.style.setProperty('opacity', opacityValue);
         }
         else
         {
-                placeholder6.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
-                placeholder5.style.setProperty('opacity', 0.6);
+                placeholder6.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
+                placeholder5.style.setProperty('opacity', 0.7);
         }
 };
 
