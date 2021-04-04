@@ -83,6 +83,7 @@ darkmodeBar.onclick = function () {
         }
 };
 
+/*
 placeholder6.onclick = function () {
         let currColor = window.getComputedStyle(placeholder6, null).getPropertyValue('background-color');
         if (currColor == 'rgba(74, 145, 226, 0.7)')
@@ -95,7 +96,7 @@ placeholder6.onclick = function () {
                 placeholder6.style.backgroundColor = "rgba(74, 145, 226, 0.7)";
                 placeholder5.style.setProperty('opacity', 0.5);
         }
-};
+};*/
 
 
 
