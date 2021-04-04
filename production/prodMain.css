@@ -58,10 +58,9 @@ body {
   .navbar a {
     float: left;
     display: flex; /*changed from block because the arrow and text didn't align*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family: 'Lato';
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1.8rem;
     color: white;
     text-align: center;
