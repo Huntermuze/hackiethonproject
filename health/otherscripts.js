@@ -13,34 +13,88 @@ var placeholder5 = document.getElementById('pl5');
 var placeholder6 = document.getElementById('pl6');
 const opacityValue = 1.0;
 
-joke.onclick = function () {
-        jokeBar.style.backgroundColor = "rgb(56,214,171,0.6)";
-        joke.style.setProperty('opacity', opacityValue);
+jokeBar.onclick = function () {
+        let currColor = window.getComputedStyle(jokeBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        {
+                jokeBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                joke.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                jokeBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
+                joke.style.setProperty('opacity', 0.6);
+        }
 };
 
-quote.onclick = function () {
-        quoteBar.style.backgroundColor = "rgb(56,214,171,0.6)";
-        quote.style.setProperty('opacity', opacityValue);
+quoteBar.onclick = function () {
+        let currColor = window.getComputedStyle(quoteBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        {
+                quoteBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                quote.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                quoteBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
+                quote.style.setProperty('opacity', 0.6);
+        }
 };
 
-weather.onclick = function () {
-        weatherBar.style.backgroundColor = "rgb(56,214,171,0.6)";
-        weather.style.setProperty('opacity', opacityValue);
+weatherBar.onclick = function () {
+        let currColor = window.getComputedStyle(weatherBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        {
+                weatherBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                weather.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                weatherBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
+                weather.style.setProperty('opacity', 0.6);
+        }
 };
 
-screentime.onclick = function () {
-        screentimeBar.style.backgroundColor = "rgb(56,214,171,0.6)";
-        screentime.style.setProperty('opacity', opacityValue);
+screentimeBar.onclick = function () {
+        let currColor = window.getComputedStyle(screentimeBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        {
+                screentimeBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                screentime.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                screentimeBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
+                screentime.style.setProperty('opacity', 0.6);
+        }
 };
 
-darkmode.onclick = function () {
-        darkmodeBar.style.backgroundColor = "rgb(56,214,171,0.6)";
-        darkmode.style.setProperty('opacity', opacityValue);
+darkmodeBar.onclick = function () {
+        let currColor = window.getComputedStyle(darkmodeBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        {
+                darkmodeBar.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                darkmode.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                darkmodeBar.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
+                darkmode.style.setProperty('opacity', 0.6);
+        }
 };
 
-placeholder5.onclick = function () {
-        placeholder6.style.backgroundColor = "rgb(56,214,171,0.6)";
-        placeholder5.style.setProperty('opacity', opacityValue);
+placeholder6.onclick = function () {
+        let currColor = window.getComputedStyle(placeholder6, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(74, 145, 226, 0.6)')
+        {
+                placeholder6.style.backgroundColor = "rgb(56, 214, 171, 0.8)";
+                placeholder5.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                placeholder6.style.backgroundColor = "rgba(74, 145, 226, 0.6)";
+                placeholder5.style.setProperty('opacity', 0.6);
+        }
 };
 
 

@@ -13,34 +13,88 @@ var placeholder5 = document.getElementById('pl9');
 var placeholder6 = document.getElementById('pl10');
 const opacityValue = 1.0;
 
-prod.onclick = function () {
-        prodBar.style.backgroundColor = "rgb(50,136,213,0.8)";
-        prod.style.setProperty('opacity', opacityValue);
+prodBar.onclick = function () {
+        let currColor = window.getComputedStyle(prodBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(82, 66, 43, 0.6)')
+        {
+                prodBar.style.backgroundColor = "rgb(50,136,213, 0.8)";
+                prod.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                prodBar.style.backgroundColor = "rgba(82, 66, 43, 0.6)";
+                prod.style.setProperty('opacity', 0.6);
+        }
 };
 
-randsong.onclick = function () {
-        randsongBar.style.backgroundColor = "rgb(50,136,213,0.8)";
-        randsong.style.setProperty('opacity', opacityValue);
+randsongBar.onclick = function () {
+        let currColor = window.getComputedStyle(randsongBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(82, 66, 43, 0.6)')
+        {
+                randsongBar.style.backgroundColor = "rgb(50,136,213, 0.8)";
+                randsong.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                randsongBar.style.backgroundColor = "rgba(82, 66, 43, 0.6)";
+                randsong.style.setProperty('opacity', 0.6);
+        }
 };
 
-todolist.onclick = function () {
-        todolistBar.style.backgroundColor = "rgb(50,136,213,0.8)";
-        todolist.style.setProperty('opacity', opacityValue);
+todolistBar.onclick = function () {
+        let currColor = window.getComputedStyle(todolistBar, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(82, 66, 43, 0.6)')
+        {
+                todolistBar.style.backgroundColor = "rgb(50,136,213, 0.8)";
+                todolist.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                todolistBar.style.backgroundColor = "rgba(82, 66, 43, 0.6)";
+                todolist.style.setProperty('opacity', 0.6);
+        }
 };
 
-placeholder1.onclick = function () {
-        placeholder2.style.backgroundColor = "rgb(50,136,213,0.8)";
-        placeholder1.style.setProperty('opacity', opacityValue);
+placeholder2.onclick = function () {
+        let currColor = window.getComputedStyle(placeholder2, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(82, 66, 43, 0.6)')
+        {
+                placeholder2.style.backgroundColor = "rgb(50,136,213, 0.8)";
+                placeholder1.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                placeholder2.style.backgroundColor = "rgba(82, 66, 43, 0.6)";
+                placeholder1.style.setProperty('opacity', 0.6);
+        }
 };
 
-placeholder3.onclick = function () {
-        placeholder4.style.backgroundColor = "rgb(50,136,213,0.8)";
-        placeholder3.style.setProperty('opacity', opacityValue);
+placeholder4.onclick = function () {
+        let currColor = window.getComputedStyle(placeholder4, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(82, 66, 43, 0.6)')
+        {
+                placeholder4.style.backgroundColor = "rgb(50,136,213, 0.8)";
+                placeholder3.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                placeholder4.style.backgroundColor = "rgba(82, 66, 43, 0.6)";
+                placeholder3.style.setProperty('opacity', 0.6);
+        }
 };
 
-placeholder5.onclick = function () {
-        placeholder6.style.backgroundColor = "rgb(50,136,213,0.8)";
-        placeholder5.style.setProperty('opacity', opacityValue);
+placeholder6.onclick = function () {
+        let currColor = window.getComputedStyle(placeholder6, null).getPropertyValue('background-color');
+        if (currColor == 'rgba(82, 66, 43, 0.6)')
+        {
+                placeholder6.style.backgroundColor = "rgb(50,136,213, 0.8)";
+                placeholder5.style.setProperty('opacity', opacityValue);
+        }
+        else
+        {
+                placeholder6.style.backgroundColor = "rgba(82, 66, 43, 0.6)";
+                placeholder5.style.setProperty('opacity', 0.6);
+        }
 };
 
 
