@@ -24,7 +24,7 @@ addToDoButton.addEventListener('click', function(){
             paragraph.style.color = "white";
         } else if (paragraph.style.textDecoration == "") {
             paragraph.style.textDecoration = "line-through";
-            paragraph.style.color = "rgb(78, 250, 63)";
+            paragraph.style.color = "rgb(0, 0, 0)";
         } else {
             console.log(paragraph.style.textDecoration);
         }
