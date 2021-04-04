@@ -16,7 +16,7 @@ function getJoke() {
             }
             else
             {
-                document.getElementById("joke").innerHTML = randomJoke.setup + "\n"+ randomJoke.delivery;
+                document.getElementById("joke").innerHTML = randomJoke.setup + "<br><br>" + randomJoke.delivery;
             }
         }
         else if(xhr.readyState == 4)
