@@ -410,6 +410,12 @@ body {
 #randsong {
   font-family: 'Hammersmith One', sans-serif;
 }
+#songImage
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 .randSongPara{
   font-size: 110%;
@@ -429,7 +435,7 @@ a:link {
   text-align: center;
   font-size: 150%;
   padding: 5px;
-  width: 200px;
+  width: 100%;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -476,6 +482,7 @@ a:link {
   border-radius: 15%;
   text-align: center;
   border: 0.1rem solid black;
+  word-wrap: break-word;
 }
 
 #taskBoardTitle
