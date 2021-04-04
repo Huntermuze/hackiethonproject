@@ -10,7 +10,7 @@
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
-  background-color: #fff;
+  background-color: rgb(162, 189, 214,0.7);
 }
 
 /* Header/logo Title */
@@ -23,7 +23,7 @@ body {
 
 .header-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.2rem;
   color: white;
   background-color: rgba(0,0,0, 0.5);
   height: 75vh;
@@ -51,23 +51,32 @@ body {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #8b7a67;
-  border-top: 0.1rem solid #fff;
-
+  background-color: rgb(70,103,141,0.8);
 }
 
 /* Style the navigation bar links */
 .navbar a {
   float: left;
-  display: block;
+  display: flex; /*changed from block because the arrow and text didn't align*/
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   font-family: 'Lato';
   font-weight: 300;
   font-size: 2rem;
   color: white;
-  text-align: center;
   padding: 13px 20px;
   text-decoration: none;
   transition: .8s;
+}
+
+/*change the color for the arrows*/
+.left-button {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+  
+.right-button {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 /* Right-aligned link */
@@ -82,7 +91,7 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(160, 200, 245,0.6);
   transition: .8s;
   color: black;
 }
@@ -95,7 +104,7 @@ body {
 
 /* Fake image, just for this example */
 .desc-placeholder {
-  background-color: #aaa;
+  background-color: rgb(70,103,141,0.4);
   width: 100%;
   padding: 1rem;
   margin-bottom: 4rem;
@@ -126,23 +135,23 @@ body {
   min-height: 12rem;
   width: 100%;
   padding: 2rem;
-  border-bottom: 0.1rem solid black;
-  background-color: royalblue;
+  background-color:rgb(169,154,150,0.5);
   margin: auto;
 }
 
 .enable-disable
 {
-  background-color: rgb(225, 65, 65);
-  height: 1.5rem;
+  background-color: rgba(74, 145, 226, 0.7) ;
+  height: 2.2rem;
   width: 100%;
-  border-bottom: 0.1rem solid black;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
   text-align: center;
   padding: 0.1rem;
   font-family: 'Lato';
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .container
@@ -216,7 +225,7 @@ body {
 
 #weather-submit-btn:hover
 {
-  background-color: rgb(55, 123, 250);
+  background-color: rgb(45, 186, 148);
 }
 
 .descButtons:hover span:after {

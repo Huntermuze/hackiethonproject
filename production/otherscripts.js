@@ -14,32 +14,32 @@ var placeholder6 = document.getElementById('pl10');
 const opacityValue = 1.0;
 
 prod.onclick = function () {
-        prodBar.style.backgroundColor = "rgb(65, 225, 65)";
+        prodBar.style.backgroundColor = "rgb(50,136,213,0.8)";
         prod.style.setProperty('opacity', opacityValue);
 };
 
 randsong.onclick = function () {
-        randsongBar.style.backgroundColor = "rgb(65, 225, 65)";
+        randsongBar.style.backgroundColor = "rgb(50,136,213,0.8)";
         randsong.style.setProperty('opacity', opacityValue);
 };
 
 todolist.onclick = function () {
-        todolistBar.style.backgroundColor = "rgb(65, 225, 65)";
+        todolistBar.style.backgroundColor = "rgb(50,136,213,0.8)";
         todolist.style.setProperty('opacity', opacityValue);
 };
 
 placeholder1.onclick = function () {
-        placeholder2.style.backgroundColor = "rgb(65, 225, 65)";
+        placeholder2.style.backgroundColor = "rgb(50,136,213,0.8)";
         placeholder1.style.setProperty('opacity', opacityValue);
 };
 
 placeholder3.onclick = function () {
-        placeholder4.style.backgroundColor = "rgb(65, 225, 65)";
+        placeholder4.style.backgroundColor = "rgb(50,136,213,0.8)";
         placeholder3.style.setProperty('opacity', opacityValue);
 };
 
 placeholder5.onclick = function () {
-        placeholder6.style.backgroundColor = "rgb(65, 225, 65)";
+        placeholder6.style.backgroundColor = "rgb(50,136,213,0.8)";
         placeholder5.style.setProperty('opacity', opacityValue);
 };
 

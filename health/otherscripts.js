@@ -14,32 +14,32 @@ var placeholder6 = document.getElementById('pl6');
 const opacityValue = 1.0;
 
 joke.onclick = function () {
-        jokeBar.style.backgroundColor = "rgb(65, 225, 65)";
+        jokeBar.style.backgroundColor = "rgb(56,214,171,0.6)";
         joke.style.setProperty('opacity', opacityValue);
 };
 
 quote.onclick = function () {
-        quoteBar.style.backgroundColor = "rgb(65, 225, 65)";
+        quoteBar.style.backgroundColor = "rgb(56,214,171,0.6)";
         quote.style.setProperty('opacity', opacityValue);
 };
 
 weather.onclick = function () {
-        weatherBar.style.backgroundColor = "rgb(65, 225, 65)";
+        weatherBar.style.backgroundColor = "rgb(56,214,171,0.6)";
         weather.style.setProperty('opacity', opacityValue);
 };
 
 screentime.onclick = function () {
-        screentimeBar.style.backgroundColor = "rgb(65, 225, 65)";
+        screentimeBar.style.backgroundColor = "rgb(56,214,171,0.6)";
         screentime.style.setProperty('opacity', opacityValue);
 };
 
 placeholder3.onclick = function () {
-        placeholder4.style.backgroundColor = "rgb(65, 225, 65)";
+        placeholder4.style.backgroundColor = "rgb(56,214,171,0.6)";
         placeholder3.style.setProperty('opacity', opacityValue);
 };
 
 placeholder5.onclick = function () {
-        placeholder6.style.backgroundColor = "rgb(65, 225, 65)";
+        placeholder6.style.backgroundColor = "rgb(56,214,171,0.6)";
         placeholder5.style.setProperty('opacity', opacityValue);
 };
 
