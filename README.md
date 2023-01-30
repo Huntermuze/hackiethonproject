@@ -1,2 +1,2 @@
 # hackiethonproject
-Hackiethon 2021 Group - Yu, Zee, Matt.
+Hackiethon 2021 Group - Matt, Zu, and Zee.
