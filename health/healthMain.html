@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Wellbeing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="healthMain.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');</style>
+
+</head>
+  <body>
+    <div class="header">
+        <h1 class="header-text">WELLBEING</h1>
+        <h2 class = "header-subtext">DON'T FORGET TO TAKE CARE OF YOUR PHYSICAL HEALTH AND WELLBEING.</h2>
+    </div>
+
+    <div class="navbar">
+      <a href="../home/index.html"><img src="../img/left-arrow.svg" width=40px height=40px class="left-button">Home</a>
+      <a href="../production/prodMain.html" class="right">Productivity<img src="../img/right-arrow.svg" width=40px height=40px class="right-button"></a>
+    </div>
+
+    <div class="main">
+      <h2>GUIDE > Wellbeing Mode</h2>
+      <div class="desc-placeholder">
+        <div class="desc-texts">
+            <div class="you-sound-tired"><em>
+              You sound like you've put in the yards. Your brain is numb from all the tedious number crunching work generously provides, and your overall morale has receded more than
+            Elon Musk's 90s hairline. I think its time you took this moment to care for your physical and mental health. You can thank me later.
+          </em></div>
+            <br>
+            <br>
+            <div class="use-health-mode">
+              WorkMate's wellbeing mode was designed with your emotional, social and physical wellbeing at the forefront of our minds. Each feature embedded
+            within the cards below serves to aid your working from home experience, ensuring that your mind and body are truly being treated as "a temple".
+            This way, the next time your boss decides to cut your pay, you'll have the physical and mental stamina to take your services to a multi-billion
+            dollar franchise - earning twice the pay! (if only life were this simple)...
+            </div>
+            <br>
+            <br>
+            <div class="tips-for-health-mode"><em>
+            TIP: If any of the below feature cards seem useful to you, pin it by simply clicking the card's title. This way, you'll know what's enabled and what's disabled!
+            </em></div>
+        </div>
+            <img src="../img/wellbeing-weights.gif" id = "wellbeingGirlWeights">
+      </div>
+    </div>
+
+    
+    
+
+    <div class = card-container>
+      <div id = "joke-card" class = "feature-cards">
+        <div id = "joke-bar" class = "enable-disable">Jokes</div>
+        <div class = "rect-placeholder">
+          <h3 id = joke></h3>
+        </div>
+          <div class = "container">
+            <h4><b>Description</b></h4>
+            <p>Feeling a little down?
+              <br>
+              <br>
+              Click the button and I promise WorkMate will turn that frown upside-down!
+            </p>
+            <button class = "descButtons" onclick="getJoke()"><span>CLICK ME</span></button>
+          </div>
+      </div>
+
+      <div id = "quote-card" class = "feature-cards">
+        <div id = "quote-bar" class = "enable-disable">Quote</div>
+        <div class = "rect-placeholder">
+          <h4 id="quote"></h4>
+        </div>
+          <div class = "container">
+            <h4 id="quote-author"><b>Description</b></h4>
+            <p>Feeling the need to tap into your inner spiritual guru?
+              <br>
+              <br>
+              You get the point - click the button...
+            </p>
+            <button class = "descButtons" onclick="getQuote()"><span>CLICK ME</span></button>
+          </div>
+      </div>
+
+      <div id = "weather-card" class = "feature-cards">
+        <div id = "weather-bar" class = "enable-disable">Should you go out?</div>
+        <div id = "mapPlaceholder" class = "rect-placeholder">
+          <div id="map"></div>
+          <div class = "mapText">
+            <h5 id="w-name"></h5>
+            <h6 id = "statsOfWeather"></h6>
+            <h6 id = "outcome"></h6>
+          </div>
+        </div>
+          <div class = "container">
+            <h4><b>Description</b></h4>
+            <p>We'll let you know whether today is a good day/night to head out and spend that hourly wage you just worked so hard to earn!</p>
+            <div class="input">
+              <input type="text" id="user-city" placeholder="Enter a City">
+              <button class="descButtons" id="weather-submit-button" onclick="getWeather()"><span>Submit</span></button>
+            </div>
+          </div>
+      </div>
+
+      <div id = "screentime" class = "feature-cards" class = "screentime">
+        <div id = "screentimeBar" class = "enable-disable">Screen Time</div>
+        <div class = "rect-placeholder" id = "screentimePl">
+          <div class="circle">
+            <span class="time" id="display">00:00:00</span>
+          </div>
+          <div class="controls">
+            <button class="buttonPlay">
+              <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+    
+              <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+            </button>
+    
+            <button class="buttonReset">
+              <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+            </button>
+          </div>
+        </div>
+          <div class = "container">
+            <h4><b>Description</b></h4>
+            <p>Utilise this stopwatch to monitor your total screentime.<br><br>Maybe its time to rest your eyes and go for a walk?</p>
+          </div>
+      </div>
+
+      <div id = "darkmode" class = "feature-cards">
+        <div id = "darkmodeBar" class = "enable-disable">Dark Mode</div>
+        <div class = "rect-placeholder" id = "darkmodePlaceholder">
+          <img src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" id = "darkmodeImg">
+        </div>
+          <div class = "container">
+            <h4><b>Description</b></h4>
+            <p>If you don't wish to get an eye test tomorrow morning, we suggest you enable this feature to dim the blinding power of light-mode.</p>
+            <button class = "toggledarkmode"><span>Toggle Dark Mode</span></button>
+          </div>
+      </div>
+
+      <div id = "workoutGen" class = "feature-cards">
+        <div id = "workoutGenBar" class = "enable-disable">Stretch Routine</div>
+        <div id = "workoutGenRect" class = "rect-placeholder">
+          <iframe id = "workoutGenerator" src="https://www.youtube.com/embed/CAq9vV7gkrs" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          <div class = "container">
+            <h4><b>Description </b></h4>
+            <p>Hey you! It's time to strech those muscles. 
+              <br>
+              <br>Carpal Tunnel? We don't do that here.</p>
+          </div>
+      </div>
+    </div>
+
+    <script src="Api.js"></script>  
+    <script src="otherscripts.js"></script>
+    <script src ="screentime.js"></script>
+    <script src = "darkmode.js"></script>    
+  </body>
+</html>

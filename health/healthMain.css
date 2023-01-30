@@ -1,0 +1,528 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap);
+
+* {
+  box-sizing: border-box; 
+  scroll-behavior: smooth;
+}
+
+/* Style the body */
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  background-color: rgb(162, 189, 214,0.7);
+}
+
+/* Header/logo Title */
+.header {
+  background: url('../img/bg_right.svg') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+}
+
+.header-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.2rem;
+  color: white;
+  background-color: rgba(0,0,0, 0.5);
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  margin: 0;
+  font-size: 80px;
+}
+
+.header-subtext
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  margin-top: -12%;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(70,103,141,0.8);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: flex; /*changed from block because the arrow and text didn't align*/
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 13px 20px;
+  text-decoration: none;
+  transition: .8s;
+}
+
+/*change the color for the arrows*/
+.left-button {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+  
+.right-button {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+.navbar a.left
+{
+  float: left;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(160, 200, 245,0.6);
+  transition: .8s;
+  color: black;
+}
+
+/* Fake image, just for this example */
+.desc-placeholder {
+  background-color: rgb(70,103,141,0.4);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* These are the classes for description texts */
+#wellbeingGirlWeights {
+  padding-left: 30px;
+}
+
+.you-sound-tired {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.use-health-mode {
+  background-color: rgba(70,103,141,0.6);
+  color: white;
+  padding: 1vh;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.tips-for-health-mode {
+  border: black solid 1px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* These classes are the card classes and will style the card. */
+.feature-cards
+{
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0,0,0, 1);
+  transition: 0.3s;
+  width: 20vw;
+  min-width: 20rem;
+  background-color: rgba(221, 221, 221, 1);
+  border-radius: 0.6rem;
+  margin: 1.5rem;
+  opacity: 0.5;
+}
+
+.feature-cards:hover
+{
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0, 1);
+  opacity: 1.0;
+}
+
+.rect-placeholder
+{
+  min-height: 12rem;
+  width: 100%;
+  padding: 2rem;
+  background-color:rgb(169,154,150,0.5);
+  margin: auto;
+}
+
+#pl5:hover
+{
+  opacity: 0.5;
+}
+.enable-disable
+{
+  background-color: rgba(74, 145, 226, 0.7) ;
+  height: 2.8rem;
+  width: 100%;
+  border-bottom: 0.1rem solid black;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  text-align: center;
+  padding-top: 0.4rem;
+  font-family: 'Lato';
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.container
+{
+  padding: 0.8rem;
+  height: 20%;
+  width: 100%;
+  font-family: 'Lato';
+  font-weight: 550;
+  font-size: 1.1rem;
+}
+
+.card-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*Custom description buttons (made for consistency)*/
+
+.descButtons {
+  font-family: 'Hammersmith One', sans-serif;
+  border-radius: 4px;
+  background-color: royalblue;
+  border: none;
+  color: RGB(255, 255, 255);
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.descButtons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.descButtons span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.descButtons:hover span {
+  padding-right: 25px;
+}
+
+#weather-submit-btn:hover
+{
+  background-color: rgb(45, 186, 148);
+}
+
+.descButtons:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Below is the styling for the Screen Time Monitor*/
+
+#screentimePl{
+  display: block;
+  height: 25rem;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonPlay {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+.buttonReset {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+#playButton {
+  display: block;
+  filter: brightness(0) saturate(100%);
+}
+
+#pauseButton {
+  display: none;
+  filter: brightness(0) saturate(100%);
+}
+
+#resetButton {
+  filter: brightness(0) saturate(100%);
+}
+
+/*Below is the code for the dark mode feature*/
+body {
+  --text-color: #222;
+  --bkg-color: rgba(162, 189, 214, 0.3);
+}
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: rgba(30, 38, 58, 0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: rgba(30, 38, 58, 0.9);
+  }
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: rgba(162, 189, 214, 0.3);
+  }
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+/* Main column */
+.main {   
+  margin: 1.5rem;
+  font-family: 'Lato';
+  color: var(--text-color);
+}
+
+.you-sound-tired
+{
+  color: var(--text-color);
+}
+
+/*Darkmode buttons (same as others - for consistency)*/
+.toggledarkmode {
+  font-family: 'Hammersmith One', sans-serif;
+  border-radius: 4px;
+  background-color: royalblue;
+  border: none;
+  color: RGB(255, 255, 255);
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.toggledarkmode span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.toggledarkmode span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.toggledarkmode:hover span {
+  padding-right: 25px;
+}
+
+.toggledarkmode:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#darkmodeImg
+{
+  width: 100%;  
+  height: 100%;
+}
+
+#darkmodePlaceholder
+{
+  padding: 0;
+  margin: 0;
+}
+
+/* Below is for weather API */
+#user-city {
+ /* padding: 0.5rem;
+  margin: 3% 10% 2% 0%;  */
+  transition: 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: none;
+  width: 100%;
+}
+
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  width: 100%;
+  z-index: 3;
+  border-radius: 10px;
+}
+
+#mapPlaceholder
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  
+}
+
+.mapText
+{
+  display: block;
+  font-family: 'Lato';
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: rgb(169,154,150,1.0);;
+  color: black;
+  height: 100%;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+#w-name
+{
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#statsOfWeather
+{
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#outcome
+{
+  padding: 0.5rem;
+  margin: 0;
+}
+
+/*Below is the code for a custom scrollbar.
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(148, 148, 148); 
+  border-radius: 10px;
+  transition: .3s; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 104, 104);
+  transition: .3s; 
+}
+
+#wellbeingGirlWeights
+{
+  height: 35vh;
+  width: 20%;
+  margin-right: 2rem;
+}
+
+#workoutGenerator
+{
+  width: 100%;
+  height: 12rem;
+}
+
+#workoutGenRect
+{
+  padding: 0;
+}

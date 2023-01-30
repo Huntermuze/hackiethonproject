@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackiethon 2021</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./homescreen.css">
+
+</head>
+<body>
+
+  <div class = "home-popup" id = "homeScreen">
+
+    <div class="welcome-msg">
+        <h1 class="welcome">W<a href="https://github.com/huntermuze/hackiethonproject"><img width = "35" height = "35" src="../img/github-icon.png" alt="Github Icon"></a>rkMate</h1>
+        <h2 class="welcome-desc"> 
+        We understand the struggles of maintaining one's state of body and mind while working for home during this global pandemic. 
+        Physical fitness, productivity and mental health can easily drastically decline over this period of isolation.
+        That's why we've come up with a platform to meet all your production and wellbeing-related needs. 
+        Meet your new helpful and work-safe buddy, WorkMate!
+        </h2>
+    </div>
+
+    <div class="bottom-welcome-msg">
+        <div class="desc-features">
+            <div class="prod-desc-features"> 
+                <img id = "prodImage" src="../img/prod-icon.svg" alt="img">
+                <h3>Customisable features to enhance your work productivity.</h3>
+            </div>
+            <div class="health-desc-features">
+                <img id = "healthImage" src="../img/health-icon.svg" alt="img">
+                <h3>But don't forget to maintain your physical and mental wellbeing!</h3>
+            </div>
+        </div>
+        <button class = "formButton" onclick = "closeForm()">Explore our features</button>
+    </div>
+    
+  </div>
+
+  <div class="container">
+
+      <div class="split left">
+        <h1>Productivity</h1>
+        <h1>Mode</h1>
+        <a href="../production/prodMain.html" class="mainButton">Enter Section</a>
+      </div>
+
+      <div class="split right">
+        <h1>Wellbeing</h1>
+        <h1>Mode</h1>
+        <a href="../health/healthMain.html" class="mainButton">Enter Section</a>
+      </div>
+
+    </div>
+    
+  <script src="index.js"></script>
+  <script src = "startscreen.js"></script>
+</body>
+</html>

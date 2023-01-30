@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
+
+* {
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+  }
+
+/* Style the body */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(139,122,103,0.3);
+  }
+  
+  /* Header/logo Title */
+  .header {
+    background: url('../img/bg_home.svg') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+  }
+
+  .header-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0;
+    font-size: 80px;
+    padding: 0;
+  }
+
+  .header-subtext
+  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-top: -12%;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(121,105,86);
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: flex; /*changed from block because the arrow and text didn't align*/
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    text-decoration: none;
+    transition: .8s;
+  }
+
+  /*change the color for the arrows*/
+  .left-button {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+  
+  .right-button {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+
+  .navbar a.left
+  {
+    float: left;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover{
+    background-color: rgb(185, 164, 139);
+    transition: .8s;
+    color: black;
+  }
+  
+  /* Main column */
+  .main {   
+    margin: 1.5rem;
+    font-family: 'Lato';
+  }
+  
+  /* Fake image, just for this example */
+  .desc-placeholder {
+    background-color: rgb(121,105,86,0.4);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  /* These are the classes for description texts */
+  .you-procrastinate {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.719);
+  }
+
+  .you-havent-worked {
+    text-align: center;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+  }
+
+  .use-prod-mode {
+    background-color: rgba(121,105,86);
+    color: white;
+    padding: 1vh;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .tips-for-prod-mode {
+    border: black solid 1px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* These classes are the card classes and will style the card. */
+  .feature-cards
+  {
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0,0,0, 1);
+    transition: 0.3s;
+    width: 20vw;
+    min-width: 20rem;
+    background-color: rgba(221, 221, 221, 1);
+    border-radius: 0.6rem;
+    margin: 1.5rem;
+    opacity: 0.5;
+  }
+
+  .feature-cards:hover
+  {
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0, 1);
+    opacity: 1.0;
+  }
+
+  .rect-placeholder
+  {
+    min-height: 12rem;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 0.1rem solid black;
+    background-color: rgb(82, 66, 43,0.3);
+    margin: auto;
+  }
+  .enable-disable
+  {
+    background-color: rgb(82, 66, 43,0.6);
+    height: 2.8rem;
+    width: 100%;
+    border-bottom: 0.1rem solid black;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+
+  .container
+  {
+    padding: 0.8rem;
+    height: 20%;
+    width: 100%;
+    font-family: 'Lato';
+    font-weight: 550;
+    font-size: 1.1rem;
+  }
+
+  .card-container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pl5:hover
+  {
+    opacity: 0.5;
+  }
+
+  #pl7:hover
+  {
+    opacity: 0.5;
+  }
+
+  #pl9:hover
+  {
+    opacity: 0.5;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /*Below is the productivity timer layout*/
+
+  input {
+    transition: 0.5s ease-in-out;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.11);
+    border: none;
+  }
+  .btn-group {
+    height: 10%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .btn-group button {
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border: none;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+  }
+  .btn-group button:hover
+  {
+    transition: transform .5s;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+  form {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 370px;
+    margin: 5px auto;
+  }
+  .prodSettingSave {
+    background: rgba(51, 51, 51, 0.8);
+    width: 100%;
+    margin: 5px 0;
+    color: white;
+    padding: 0.5rem;
+    font-size: 18px;
+    border: none;
+  }
+  .prodSettingSave:hover
+  {
+    background: rgba(0, 0, 0, 1);
+    transition: transform .5s;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .start {
+    background: rgba(51, 51, 51, 0.9);
+    color: white;
+  }
+  .start:hover{
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    transition: transform .5s;
+  }
+
+  .break {
+    background: rgba(0, 199, 116, 0.9);
+    color: #000000;
+  }
+
+  .break:hover
+  {
+    background: rgba(0, 299, 136, 1);
+    color: black;
+    transition: transform .5s;
+  }
+
+  .reset {
+    background: rgba(51, 51, 51, 0.9);
+    color: white;
+  }
+  .reset:hover
+  {
+    background: rgba(0, 0, 0, 1);
+    transition: transform .5s;
+  }
+  
+  .pause {
+    background: rgba(51, 51, 51, 0.9);
+    color: white;
+  }
+  .pause:hover
+  {
+    background: rgba(0, 0, 0, 1);
+    transition: transform .5s;
+  }
+
+  .resume {
+    background: rgb(50,136,213,0.4);
+    color: white;
+  }
+  .resume:hover
+  {
+    background: rgb(50,136,213,0.8);
+    transition: transform .5s;
+  }
+  
+  .clock {
+    padding: 1rem;
+    margin: 0.1rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 30%;
+    font-size: 24px;
+  }
+  .progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .progress-ring__circle {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: rgb(255, 179, 38);
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 4px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: rotate(-90deg) scale(1);
+    }
+    50% {
+      transform: rotate(-90deg) scale(1.05);
+    }
+    75% {
+      transform: rotate(-90deg) scale(0.8);
+    }
+  }
+
+
+/* Below is the styling for the RANDOM SONG Feature*/
+#randsong {
+  font-family: 'Hammersmith One', sans-serif;
+}
+#songImage
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.randSongPara{
+  font-size: 110%;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.randSongButton {
+  font-family: 'Lato', sans-serif;
+  border-radius: 4px;
+  background-color: royalblue;
+  border: none;
+  color: RGB(255, 255, 255);
+  text-align: center;
+  font-size: 150%;
+  padding: 5px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.randSongButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.randSongButton span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.randSongButton:hover span {
+  padding-right: 25px;
+}
+
+.randSongButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Below is the todo-list styling*/
+.todoListInputAdd
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.toDoListContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(50,136,213,0.4);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 15%;
+  text-align: center;
+  border: 0.1rem solid black;
+  word-wrap: break-word;
+}
+
+#taskBoardTitle
+{
+  text-decoration: underline;
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.to-dos {
+  text-align: left;
+  }
+
+#inputField {
+  width: 75%;
+  height: 30%;
+  border: 0.3vh solid black;
+  outline: none;
+  padding: 0;
+  color: white;
+  font-family: "Lato";
+}
+
+#addToDoBtn {
+  width: 20%;
+  height: 35%;
+  border: 0.3vh solid black;
+  background: rgba(51, 51, 51, 0.775);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Lato";
+  transition: .3s;
+}
+
+#addToDoBtn:hover
+{
+  background: rgba(0, 0, 0, 1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+/* These change the colours of the placeholders on all types of browswers*/
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox, Chrome, Safari etc*/
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}
+
+#websiteblockerImg, #prodtipsImg, #scheduleImg
+{
+  width: 100%;  
+  height: 100%;
+}
+
+#websiteblockerPlaceholder, #prodtipsPlaceholder, #schedulePlaceholder
+{
+  margin: 0;
+}
+
+#prodNerdGif
+{
+  height: 100%;
+  width: 20%;
+  margin-right: 2rem;
+}
+
+/*Below is the code for a custom scrollbar.
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(148, 148, 148); 
+  border-radius: 10px;
+  transition: .3s; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 104, 104);
+  transition: .3s; 
+}

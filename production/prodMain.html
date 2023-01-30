@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productivity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="prodMain.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;450;600&display=swap');
+    </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class = "header-text">PRODUCTIVITY</h1>
+    <h2 class = "header-subtext">IT'S TIME TO GET SOME WORK DONE.</h2>
+  </div>
+
+    <div class="navbar">
+      
+      <a href="../home/index.html" class = "left"><img src="../img/left-arrow.svg" width=40px height=40px class="left-button">Home</a>
+      <a href="../health/healthMain.html" class="right">Wellbeing <img src="../img/right-arrow.svg" width=40px height=40px class="right-button"></a>
+    </div>
+
+      <div class="main">
+        <h2>GUIDE > Productivity Mode</h2>
+        <div class="desc-placeholder">
+          <img src="../img/computer-anim.gif" id = "prodNerdGif">
+          <div class="desc-texts">
+            <div class="you-procrastinate"><em>
+              You sit down at the computer, and you swear you'll be productive. Next thing you know, it's twelve hours later. You've checked your email, updated your Facebook status, blown through 200 pages of Reddit, 
+              read every article in your Twitter feed, looked up your favorite band on Wikipedia, vanity googled yourself, cyber-stalked your ex, browsed through all your high-school crushes' Instagram feeds, 
+              and lost a week's pay playing online poker.
+            </em></div>
+            <br>
+            <br>
+            <div class="you-havent-worked">
+              What you haven't done is WORK.
+            </div> 
+            <br>
+            <br>
+            <div class="use-prod-mode">
+              WorkMate's productivity mode was designed with the concepts of efficiency and effectiveness at the forefront of our minds. Each feature embedded within the cards below serves to aid your working from home experience,
+              ensuring that distractions are kept as far away as possible. This way, you'll be able to get a lot more out of your day and complete your work sooner, rather than by next Christmas. 
+            </div>
+            <br>
+            <div class="tips-for-prod-mode">
+              <em>TIPS: If any of the below feature cards seem useful to you, pin it by simply clicking the card's title. This way, you'll know what's enabled and what's disabled!</em>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+      <div class = card-container>
+
+        <div id = "prod-card" class = "feature-cards">
+          <div id = "prod-bar" class = "enable-disable">Productivity Timer</div>
+          <div class = "rect-placeholder" id ="prodTimerPlaceholder">
+            <figure class="clock">
+              <div class="mins">0</div>
+              <div>:</div>
+              <div class="secs">00</div>
+              <audio
+                src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+              ></audio>
+              <svg class="progress-ring" height="120" width="120">
+                <circle
+                  class="progress-ring__circle"
+                  stroke-width="8"
+                  fill="transparent"
+                  r="50"
+                  cx="60"
+                  cy="60"
+                />
+              </svg>
+            </figure>
+            <div class="btn-group">
+              <button class="start">start focus</button>
+              <button class="reset">reset</button>
+              <button class="pause">pause</button>
+            </div>
+            <form action=".">
+              <label for="focusTime">Focus Time</label>
+              <input type="number" value="1" id="focusTime" />
+              <label for="breakTime">Break Time</label>
+              <input type="number" value="1" id="breakTime" />
+              <button class = "prodSettingSave" type="submit">Save Settings</button>
+            </form>
+          </div>
+            <div class = "container">
+              <h4><b>Description</b></h4>
+              <p>First begin by inputting your amount of focus time (in minutes) and break time (in minutes), then save the setting.
+                Then select "start focus" to begin your period of solid productivity. You can pause this period inbetween to account for any
+                unexpected interruptions, or you can reset if need be.
+              </p>
+              <br>Click the "start break" to reap the benefits of your well-deserved break!
+            </div>
+        </div>
+
+        <div id = "randsong" class = "feature-cards">
+          <div id = "randsongBar" class = "enable-disable">Music Station</div>
+          <div class = "rect-placeholder">
+              <div class="col-xs-6 text-right" id="songImage"></div>
+              <div class="col-xs-6 text-left">
+                <div class = "randSongPara">
+                  <p id="song"></p>
+                  <p id="artist"></p>
+                  <p id="releaseDate"></p>
+                </div>  
+              </div>
+              </div>
+            <div class = "container">
+              <h4><b>Description</b></h4>
+              <p>Need new songs to vibe with while working? <br><br>Click the "new song" button below to fetch a song that'll ensure you complete today's work. You can even click the name/author!</p>
+              <button class="randSongButton" onclick="newRandomSong()"><span>NEW SONG</span></button>            
+            </div>
+        </div>
+  
+        <div id = "todolist" class = "feature-cards">
+          <div id = "todolistBar" class = "enable-disable">Today's TO-DO List</div>
+          <div class = "rect-placeholder">
+            <div class = "todoListInputAdd">
+              <input id="inputField" type="text" placeholder = "Enter a task">
+              <button id="addToDoBtn">+</button>
+            </div>
+            <div class="toDoListContainer">
+              <h4 id = "taskBoardTitle">Tasks Board </h4>
+              <div class="to-dos" id="toDoContainer">
+              </div>
+          </div>
+          </div>
+            <div class = "container">
+              <h4><b>Description</b></h4>
+              <p>Want an efficient way of organising you daily tasks?
+                <br>
+                <br>Introducing our state-of-the-art (not really) TO-DO list. Simply enter the task(s) you wish to complete and click the "+" button to add them to the tasks board. If you've completed a task,
+                you may click on it (on the board), and it will automatically cross itself out. Double click a task to remove it from the list.
+              </p>
+            </div>
+        </div>
+
+        <div id = "pl5" class = "feature-cards">
+          <div id = "pl6" class = "enable-disable">Website Blocker</div>
+          <div class = "rect-placeholder" id = "websiteblockerPlaceholder">
+            <img src="../img/website-blocker.png" id = "websiteblockerImg">
+          </div>
+            <div class = "container">
+              <h4><b>Description</b></h4>
+              <p>COMING SOON!</p>
+            </div>
+        </div>
+  
+        <div id = "pl7" class = "feature-cards">
+          <div id = "pl8" class = "enable-disable">Productivity Tips</div>
+          <div class = "rect-placeholder" id = "prodtipsPlaceholder">
+            <img src="../img/prod-tips.png" id = "prodtipsImg">
+          </div>
+            <div class = "container">
+              <h4><b>Description</b></h4>
+              <p>COMING SOON!</p>
+            </div>
+        </div>
+  
+        <div id = "pl9" class = "feature-cards">
+          <div id = "pl10" class = "enable-disable">Schedule</div>
+          <div class = "rect-placeholder" id = "schedulePlaceholder">
+            <img src="../img/schedule.jpg" id = "scheduleImg">
+          </div>
+            <div class = "container">
+              <h4><b>Description</b></h4>
+              <p>COMING SOON!</p>
+            </div>
+        </div>
+      </div>
+  
+
+      </div>
+
+      <script src="settings.js"></script>
+      <script src="timer.js"></script>
+      <script src="progress.js"></script>
+      <script src="otherscripts.js"></script>
+      <script src="todo.js"></script>
+      <script src="randomSong.js"></script>
+</body>
+</html>
